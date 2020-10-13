@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <list></list>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  import List from "./components/List";
+  export default {
+    components: {
+      List
+    }
+  };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import url("https://use.fontawesome.com/releases/v5.11.0/css/all.css");
+  @import url("https://fonts.googleapis.com/css?family=Oswald");
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 1rem;
+    font-family: "Oswald", Tahoma;
+    background-color: #fff0f0;
+    color: #463333;
+  }
+  #app {
+    position: relative;
+    padding: 10px;
+    min-height: 100vh;
+    width: 70%;
+    margin: 0 auto;
+   
+  }
 </style>
